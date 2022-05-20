@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><HTML/CSS>_</title>
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/logo.png">
+        <ul class="menu">
+            <li><a data-goto=".page1" href="#" class="menu__link">About</a></li>
+            <li><a data-goto=".page2" href="#" class="menu__link">Projects</a></li>
+            <li><a "" href="#popup">Contact</a></li>
+        </ul>
+        <div class="brg"> <img class="brg" src="images/burger.png"> </div>
+    </header>
+    <div class="block1" id="1">
+        <div class="txt">
+            <h1 class="txt2">Hallo!</h1>
+            <div class=txt_left>
+                <h2 class="txt1">I’m</h2><h2 class="txt3">Web-designer</h2>
+            </div>
+            <div class="buttons">
+                <button class="btn1"><a href="#2">About</a></button>
+                <button class="btn2"><a href="#3">Projects</a></button>
+            </div>
+        </div>
+        <img class="photo" src="images/photo.png">
+    </div>
+    <div class="block2 page1" id="2">
+        <div class="txt_a">
+            <h2 class="txt4">About me</h2>
+            <p class="txt5">Hi, I'm Anton – Web designer from Moscow.<br>
+                I'm interested in design and everything<br> 
+                connected with it.<br>
+                <br>
+                Ready to implement excellent projects<br>
+                with wonderful people.
+            </p>
+        </div>
+        <img class="perc" src="images/me.png">
+    </div>
+    <div class="block3 page2" id="3">
+        <h2 class="txt6">Projects</h2>
+        <div class="slider">
+                <div id="content-1" class="item_1">
+                    <img src="../images/item_1.png">
+                    <h2 class="h2_p">Вёрстка сайта по макету</h2>
+                    <p class="p_p">Вёрстка и адаптация сайта<br>по дизайн-макету</p>
+                </div>
+                <div id="content-2" class="item_2">
+                    <img src="../images/item_2.png">
+                    <h2 class="h2_p">Дизайн постов в инстаграм</h2>
+                    <p class="p_p">Дизайн запоминающихся постов в инстаграм</p>
+                </div>
+                <div id="content-3" class="item_3">
+                    <img src="../images/item_3.png">
+                    <h2 class="h2_p">Дизайн рекламного плаката</h2>
+                    <p class="p_p">Дизайн рекламного плаката<br>для острого соуса Tabasco</p>
+                </div>  
+                <div id="content-4" class="item_4">
+                    <img src="../images/item_4.png">
+                    <h2 class="h2_p">Дизайн постеров</h2>
+                    <p class="p_p">Дизайн постеров концерта<br> Alan’a Walker’a в Москве</p>
+                </div>  
+        </div>
+        <div class="slider_arrow"></div>
+        <!-- <button class="arrow_l"><img src="images/arr_l.png"></button>
+        <button class="arrow_r"><img src="images/arr_r.png"></button> -->
+
+    </div>
+    <footer>
+        <div class="block5" id="4">
+            <div class="left">
+                <ul class="list">
+                    <li style="margin: 50px 0 20px 0; color: #FFFFFF;">contact@email.com</li>
+                    <li style="color: #FFFFFF;">github: @name</li>
+                </ul>
+
+            </div>
+        </div>
+    </footer>
+
+    <div id="back_to_top" class="back-top">
+        <img src="/images/arrow_top.png" class="arrow_top">
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+
+    <script src="js/script.js"></script>
+    <div id="popup" class="popup">
+        <a href="#" class="popup_area"></a>
+        <div class="popup_body">
+            <div class="popup_content">
+                <a href="#" class="popup_close"> <img src="images/cross.png"> </a>
+                <div class="popup_title">Enter the data<br>to leave a request</div>
+                <div class="popup_text">
+                    <form action="#" method="get">
+                    <div>
+                        <input name="username" type="text" tabindex="1" placeholder="Name">
+                    </div>
+                    <div>
+                        <input name="email" type="email" tabindex="2" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea name="text" tabindex="3" placeholder="Message" ></textarea>
+                    </div>
+                    <button class="btn3" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
