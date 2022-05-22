@@ -7,10 +7,27 @@ $(document).ready(function(){
     nextArrow: '<button type="button" class="slick-next"></button>',
     prevArrow: '<button type="button" class="slick-prev"></button>',
     appendArrows: $('.slider_arrow'),
+
+    responsive:[
+      {
+        breakpoint:600,
+        settings:{
+          slidesToShow:1
+        }
+      },
+      {
+        breakpoint:1024,
+        settings:{
+          slidesToShow:2
+        }
+      }
+    ]
   });
 });
   
+
 // Прокрутка до блока
+
 
 const menuLinks = document.querySelectorAll('.menu__link[data-goto]');
 if (menuLinks.length > 0) {
@@ -33,7 +50,9 @@ if (menuLinks.length > 0) {
   }
 }
 
+
 //Кнопка "Вверх"
+
 
 $(window).scroll(function() {
   let scrolled = $(window).scrollTop();
@@ -49,4 +68,42 @@ $(window).scroll(function() {
 
 $('#back_to_top').click(function() {
   $('body,html').animate({scrollTop: 0}, 1000)
+});
+
+
+
+//Burger menu
+
+
+$(document).ready(function(){
+  $('.burger-menu__button').click(function(event){
+    $('.burger-menu__nav, .burger-menu').toggleClass('burger-menu__nav_active, burger-menu_active');
+    $('body').toggleClass('lock');
+  })
+})
+
+
+//Tabs 
+
+const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
+const tabsItem = document.querySelectorAll(".tabs__item");
+
+
+tabsBtn.forEach(function(item){
+  item.addEventListener("click", function(){
+    let currentBtn = item;
+    let tabId = currentBtn.getAttribute("data-tab");
+    let currentTab = document.querySelector(tabId);
+
+    tabsBtn.forEach(function(item) {
+      item.classList.remove('active');
+    });
+
+    tabsItem.forEach(function(item) {
+      item.classList.remove('active');
+    });
+
+    currentBtn.classList.add('active');
+    currentTab.classList.add('active');
+  });
 });

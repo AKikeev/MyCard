@@ -14,10 +14,27 @@
         <ul class="menu">
             <li><a data-goto=".page1" href="#" class="menu__link">About</a></li>
             <li><a data-goto=".page2" href="#" class="menu__link">Projects</a></li>
-            <li><a "" href="#popup">Contact</a></li>
+            <li><div class="contact"><a href="#popup">Contact</a></div></li>
         </ul>
-        <div class="brg"> <img class="brg" src="images/burger.png"> </div>
     </header>
+
+    <!-- Burger -->
+    <div class="burger-menu">
+        <a href="#" class="burger-menu__button">
+            <span class="burger-menu__lines"></span>
+        </a>
+
+        <nav class="burger-menu__nav">
+            <div class="space"></div>
+            <a href="#" class="burger-menu__link">Home</a>
+            <a href="#2" class="burger-menu__link">About</a>
+            <a href="#3" class="burger-menu__link">Projects</a>
+        </nav>
+
+        <div class="burger-menu__overlay"></div>
+    </div>
+
+
     <div class="block1" id="1">
         <div class="txt">
             <h1 class="txt2">Hallo!</h1>
@@ -72,6 +89,33 @@
         <!-- <button class="arrow_l"><img src="images/arr_l.png"></button>
         <button class="arrow_r"><img src="images/arr_r.png"></button> -->
 
+        <!-- Табы-->
+        
+        <div class="tabs">
+            <div class="tabs__nav">
+                <button class="tabs__nav-btn active" type="button" data-tab="#tab_1">All</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Coding</button>
+                <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Design</button>
+            </div>
+            <div class="tabs__content">
+                <div class="tabs__item active" id="tab_1"> 
+                    <div class="tab__item"><img src="images/item_1.png"></div>
+                    <div class="tab__item"><img src="images/item_2.png"></div>
+                    <div class="tab__item"><img src="images/item_3.png"></div>
+                    <div class="tab__item"><img src="images/item_4.png"></div>
+
+
+                </div>
+                <div class="tabs__item" id="tab_2"> 
+                    <div class="tab__item"><img src="images/item_1.png"></div>
+                </div>
+                <div class="tabs__item" id="tab_3"> 
+                    <div class="tab__item"><img src="images/item_2.png"></div>
+                    <div class="tab__item"><img src="images/item_3.png"></div>
+                    <div class="tab__item"><img src="images/item_4.png"></div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer>
         <div class="block5" id="4">
@@ -85,15 +129,22 @@
         </div>
     </footer>
 
+    <!-- Кнопка "Наверх" -->
+
     <div id="back_to_top" class="back-top">
         <img src="/images/arrow_top.png" class="arrow_top">
     </div>
+
+    <!-- Скрипты -->
 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="js/slick.min.js"></script>
 
     <script src="js/script.js"></script>
+
+    <!-- Модальное окно -->
+
     <div id="popup" class="popup">
         <a href="#" class="popup_area"></a>
         <div class="popup_body">
